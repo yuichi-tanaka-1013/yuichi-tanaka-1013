@@ -24,8 +24,3 @@ I care about simple designs, clear trade-offs, and things you can measure.
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
 ![OpenTelemetry](https://img.shields.io/badge/OpenTelemetry-000000?style=flat&logo=opentelemetry&logoColor=white)
-
-### Now building
-
-- **A picture-first English vocabulary app** (side project). It shows a picture, the word, and its sound, and keeps the Japanese translation hidden. The goal is to reach a word's meaning without translating.
-- **Multi-agent workflows with Claude Code.** One lead agent hands work to many smaller agents, then checks and merges their results. See [ai-agent-shogun](https://github.com/yuichi-tanaka-1013/ai-agent-shogun).
