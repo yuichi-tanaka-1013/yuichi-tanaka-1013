@@ -24,18 +24,19 @@ How these areas connect to the tools I use:
 ```mermaid
 flowchart LR
     PM["PM"]
-    IAC["Terraform (IaC)"]
+    IAC["IaC: Terraform, CDK, Serverless"]
     AWS["AWS infrastructure"]
     BE["Backend"]
     FE["Frontend"]
     OBS["Observability"]
 
-    ECS["ECS Fargate"]
-    RDS["RDS PostgreSQL"]
-    ALB["ALB"]
-    S3["S3"]
-    IAM["IAM"]
-    VPC["VPC"]
+    COMPUTE["Compute: Lambda, Batch, App Runner"]
+    CONTAINERS["Containers: ECS on Fargate, ECR"]
+    DATA["Data: RDS, Aurora, DynamoDB, ElastiCache, S3"]
+    NET["Networking and Edge: VPC, ALB, CloudFront, Route 53"]
+    SEC["Security: IAM, Identity Center, Organizations, WAF"]
+    MSG["Messaging: SNS, SQS, EventBridge, SES"]
+    CICD["CI/CD: CodePipeline, CodeBuild"]
     CW["CloudWatch"]
     FASTAPI["FastAPI"]
     GO["Go"]
@@ -54,13 +55,15 @@ flowchart LR
     OBS -->|"instruments"| BE
     OBS -->|"monitors"| AWS
 
-    AWS --> ECS
-    AWS --> RDS
-    AWS --> ALB
-    AWS --> S3
-    AWS --> IAM
-    AWS --> VPC
+    AWS --> COMPUTE
+    AWS --> CONTAINERS
+    AWS --> DATA
+    AWS --> NET
+    AWS --> SEC
+    AWS --> MSG
+    AWS --> CICD
     AWS --> CW
+    CICD -->|"deploys to"| CONTAINERS
     BE --> FASTAPI
     BE --> GO
     BE --> RAILS
