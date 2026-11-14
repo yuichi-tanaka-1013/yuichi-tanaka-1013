@@ -12,11 +12,12 @@ I care about simple designs, clear trade-offs, and things you can measure.
 
 ## What I do
 
-- Design and run AWS infrastructure: ECS Fargate, RDS PostgreSQL, ALB, S3, CloudWatch, IAM, VPC
-- Write infrastructure as code with Terraform
+- Designed and built all of my company's AWS infrastructure on my own, as code: Terraform for most systems, plus AWS CDK and Serverless Framework
+- Run containers on ECS Fargate behind ALB, with CI/CD on CodePipeline and CodeBuild
+- Set up multi-account AWS with Organizations and IAM Identity Center
 - Build backends with FastAPI, Go and Rails, and frontends with Next.js and React
 - Lead projects as a PM: requirements, design, and delivery
-- Add observability with OpenTelemetry
+- Add observability with OpenTelemetry and CloudWatch
 
 How these areas connect to the tools I use:
 
