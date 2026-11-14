@@ -1,7 +1,8 @@
 name: Update profile cards
 
-# Draws stats-*.svg and grass-*.svg once a day and commits them to the `output`
-# branch. main never receives generated files.
+# Runs the tests, then draws stats-*.svg and grass-*.svg once a day and commits
+# them to the `output` branch. The daily cards never go to main. The header and
+# badge SVGs under assets/ on main are static: rebuilt by hand when they change.
 
 on:
   schedule:
@@ -21,6 +22,9 @@ jobs:
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Run the tests
+        run: python3 -m unittest discover -s tests -v
 
       - name: Draw the cards
         env:

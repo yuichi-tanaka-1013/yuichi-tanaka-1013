@@ -100,8 +100,9 @@ flowchart LR
 
 - A GitHub Actions workflow (`.github/workflows/update-cards.yml`) runs once a day and on demand.
 - It reads the contribution calendar with the built-in `GITHUB_TOKEN`. No secret is stored in this repo.
-- `scripts/profile_cards.py` draws the four SVG files. It reads only the count for each day. It never reads repository names, languages or times of day.
-- The workflow commits the SVG files to the `output` branch, and only when they change. `main` holds no generated files.
+- `scripts/profile_cards.py` draws the four SVG files. It reads only the date, weekday, count and level of each day. It never reads repository names, languages or times of day.
+- The workflow runs the tests first, and it updates the cards only when the tests pass. It commits the SVG files to the `output` branch only when they change.
+- The four daily cards exist only on `output`. `main` does not receive them. The header and badge SVGs under `assets/` on `main` are static: `scripts/build_assets.py` writes them, and they are redrawn by hand when a color, a label or a size changes.
 - The images load from `raw.githubusercontent.com` and nowhere else. No external service, font or script is involved.
 
 To draw the cards on your own machine:
