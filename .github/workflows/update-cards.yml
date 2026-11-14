@@ -2,7 +2,8 @@ name: Update profile cards
 
 # Runs the tests, then draws stats-*.svg and grass-*.svg once a day and commits
 # them to the `output` branch. The daily cards never go to main. The header and
-# badge SVGs under assets/ on main are static: rebuilt by hand when they change.
+# badge SVGs under assets/ on main are static: scripts/build_assets.py writes
+# them. Run it again when a color, a label or a size changes.
 
 on:
   schedule:
