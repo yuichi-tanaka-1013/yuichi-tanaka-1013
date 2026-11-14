@@ -16,6 +16,18 @@ ALLOWED_HOSTS = re.compile(
     r"|[\w-]+\.github\.io)$"
 )
 URL = re.compile(HTTP + r"s?://([^/\s\"'<>)\]]+)[^\s\"'<>)\]]*")
+AWS_CATEGORIES = [
+    "Compute", "Containers", "Data", "Networking & Edge", "Security & Identity",
+    "Observability", "Delivery / CI-CD", "Messaging & Integration", "IaC",
+]
+TABLE_ROW = re.compile(r"^\|([^|\n]+)\|([^|\n]+)\|$", re.MULTILINE)
+# Text that would publish an AWS account ID, an ARN, an AWS endpoint or an IPv4 address.
+IDENTIFIERS = [
+    re.compile(r"(?<!\d)\d{12}(?!\d)"),
+    re.compile(r"\barn:"),
+    re.compile(r"amazonaws"),
+    re.compile(r"(?<![\d.])(?:\d{1,3}\.){3}\d{1,3}(?![\d.])"),
+]
 
 
 def repo_text_files():
@@ -71,6 +83,29 @@ class ReadmeTest(unittest.TestCase):
     def test_mermaid_diagram_is_outside_details(self):
         start = self.text.index("```mermaid")
         self.assertEqual(self.text[:start].count("<details>"), self.text[:start].count("</details>"))
+
+    def test_no_account_or_network_identifiers(self):
+        for pattern in IDENTIFIERS:
+            with self.subTest(pattern=pattern.pattern):
+                self.assertIsNone(pattern.search(self.text))
+
+
+class AwsSectionTest(unittest.TestCase):
+    def setUp(self):
+        self.text = README.read_text(encoding="utf-8")
+
+    def test_section_is_after_the_diagram_and_before_tech(self):
+        diagram_end = self.text.index("\n```\n", self.text.index("```mermaid"))
+        aws = self.text.index("\n## AWS\n")
+        self.assertLess(diagram_end, aws)
+        self.assertLess(aws, self.text.index("\n## Tech\n"))
+
+    def test_table_has_the_nine_categories_in_order(self):
+        start = self.text.index("\n## AWS\n")
+        section = self.text[start : self.text.index("\n## Tech\n", start)]
+        rows = [(a.strip(), b.strip()) for a, b in TABLE_ROW.findall(section)]
+        self.assertEqual(rows[0], ("Category", "Services"))
+        self.assertEqual([name for name, _ in rows[2:]], AWS_CATEGORIES)  # rows[1] is the separator
 
 
 class ExternalHostsTest(unittest.TestCase):
