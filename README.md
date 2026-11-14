@@ -74,6 +74,33 @@ flowchart LR
     OBS --> CW
 ```
 
+## AWS
+
+Every service below appears in infrastructure code I wrote (Terraform, AWS CDK or Serverless Framework).
+
+| Category | Services |
+|---|---|
+| Compute | AWS Lambda · AWS Batch · Amazon EC2 · AWS App Runner |
+| Containers | Amazon ECS on AWS Fargate · Amazon ECR · Application Auto Scaling · AWS Cloud Map |
+| Data | Amazon RDS (PostgreSQL, MySQL) · Amazon Aurora · Amazon DynamoDB · Amazon ElastiCache · Amazon S3 · Amazon EFS · Amazon Data Firehose · AWS Glue Data Catalog · Amazon Athena |
+| Networking & Edge | Amazon VPC (NAT Gateway, VPC endpoints, Flow Logs) · Elastic Load Balancing (ALB, NLB) · Amazon CloudFront (CloudFront Functions, Lambda@Edge) · Amazon Route 53 · Amazon API Gateway (REST, HTTP) |
+| Security & Identity | AWS IAM · AWS IAM Identity Center · AWS Organizations · AWS Certificate Manager · AWS WAF · AWS Secrets Manager · AWS Systems Manager Parameter Store · AWS KMS · Amazon Cognito · Amazon GuardDuty (Malware Protection for S3) · AWS CloudTrail |
+| Observability | Amazon CloudWatch (Logs, Alarms, Dashboards, Container Insights, cross-account observability) · Amazon Managed Grafana · AWS Chatbot (Slack) · AWS Billing and Cost Management (cost allocation tags, billing alarms) |
+| Delivery / CI-CD | AWS CodePipeline · AWS CodeBuild · AWS CodeConnections (GitHub) · AWS CodeStar Notifications · GitHub Actions with OIDC to IAM |
+| Messaging & Integration | Amazon SNS · Amazon SQS · Amazon EventBridge · Amazon EventBridge Scheduler · Amazon SES |
+| IaC | Terraform (per-environment state in S3, DynamoDB locking) · Terragrunt · AWS CDK · AWS CloudFormation · Serverless Framework |
+
+### Patterns
+
+- Multi-account AWS with Organizations and IAM Identity Center, plus cross-account roles
+- Containers on ECS Fargate behind ALB with ACM certificates; ECS Exec for operations; Container Insights
+- CI/CD with CodePipeline and CodeBuild: build images to ECR, then roll out to ECS; pipeline notifications to Slack through SNS and AWS Chatbot
+- Static sites on S3 and CloudFront (OAC/OAI, CloudFront Functions), with AWS WAF where needed
+- Secrets in SSM Parameter Store (SecureString) and Secrets Manager, injected into tasks at runtime
+- Scheduled jobs with EventBridge rules and EventBridge Scheduler
+- Subnets across multiple AZs, Multi-AZ RDS in production, and NAT with S3 gateway endpoints for private subnets
+- Arm64 (Graviton) for Fargate tasks, CodeBuild and Lambda
+
 ## Tech
 
 ![AWS](https://raw.githubusercontent.com/yuichi-tanaka-1013/yuichi-tanaka-1013/main/assets/badges/aws.svg)
