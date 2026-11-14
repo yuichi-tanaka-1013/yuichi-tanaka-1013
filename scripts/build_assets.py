@@ -69,11 +69,37 @@ BADGE_HEIGHT = 28
 BADGE_FONT_SIZE = 13
 BADGE_PAD = 12
 
+# Each badge gets whichever of these two has the higher contrast with its fill.
+# TEXT_DARK is a little darker than the page text (#1f2328), which gives the
+# FastAPI teal only 4.3:1 and misses the 4.5:1 that small text needs.
+TEXT_LIGHT = "#ffffff"
+TEXT_DARK = "#0d1117"
+
+
+def _luminance(color: str) -> float:
+    """WCAG relative luminance of a #rrggbb color."""
+    r, g, b = (
+        (c / 12.92 if c <= 0.04045 else ((c + 0.055) / 1.055) ** 2.4)
+        for c in (int(color[i:i + 2], 16) / 255 for i in (1, 3, 5))
+    )
+    return 0.2126 * r + 0.7152 * g + 0.0722 * b
+
+
+def contrast_ratio(a: str, b: str) -> float:
+    """WCAG contrast ratio of two #rrggbb colors: 1 (same) to 21 (black on white)."""
+    high, low = sorted((_luminance(a), _luminance(b)), reverse=True)
+    return (high + 0.05) / (low + 0.05)
+
+
+def badge_text_color(fill: str) -> str:
+    return max((TEXT_LIGHT, TEXT_DARK), key=lambda color: contrast_ratio(fill, color))
+
 
 def render_badge(label: str, fill: str) -> str:
-    """One pill: brand color, white bold text, and a thin gray ring.
+    """One pill: brand color, bold text in white or dark, and a thin gray ring.
 
-    The ring keeps black and near-black badges visible on a dark page.
+    The text color is the one with the higher contrast against the fill. The
+    ring keeps black and near-black badges visible on a dark page.
     """
     text_len = text_width(label, BADGE_FONT_SIZE)
     width = round(text_len + 2 * BADGE_PAD)
@@ -84,7 +110,7 @@ def render_badge(label: str, fill: str) -> str:
         f"<title>{esc}</title>\n"
         f'<rect x="0.5" y="0.5" width="{width - 1}" height="{BADGE_HEIGHT - 1}" rx="6" '
         f'fill="{fill}" stroke="#8b949e" stroke-opacity="0.6"/>\n'
-        f'<text x="{width / 2:g}" y="18.5" text-anchor="middle" fill="#ffffff" '
+        f'<text x="{width / 2:g}" y="18.5" text-anchor="middle" fill="{badge_text_color(fill)}" '
         f"font-family='{FONT_STACK}' font-size=\"{BADGE_FONT_SIZE}\" font-weight=\"700\" "
         f'textLength="{text_len:g}" lengthAdjust="spacingAndGlyphs">{esc}</text>\n'
         "</svg>\n"

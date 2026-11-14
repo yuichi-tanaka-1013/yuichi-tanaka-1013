@@ -11,6 +11,8 @@ from svgcheck import XMLNS, external_references, find_all, local  # noqa: E402
 
 ASSETS = ROOT / "assets"
 
+MIN_CONTRAST = 4.5  # WCAG AA for normal-size text; the badge text is 13px
+
 # The same ten badges, in the same order, as the README had before.
 EXPECTED_BADGES = [
     ("AWS", "#232F3E"), ("Terraform", "#844FBA"), ("Go", "#00ADD8"), ("Python", "#3776AB"),
@@ -72,6 +74,27 @@ class StaticAssetsTest(unittest.TestCase):
                 self.assertLessEqual(float(text.get("textLength")) + 2 * ba.BADGE_PAD, width + 1)
                 rect = find_all(root, "rect")[0]
                 self.assertEqual(rect.get("fill").upper(), fill.upper())
+
+    def test_contrast_ratio_matches_known_values(self):
+        self.assertAlmostEqual(ba.contrast_ratio("#000000", "#ffffff"), 21.0, places=2)
+        self.assertAlmostEqual(ba.contrast_ratio("#ffffff", "#ffffff"), 1.0, places=2)
+        # The two grays on either side of the 4.5:1 line, and the old white-on-Go badge.
+        self.assertAlmostEqual(ba.contrast_ratio("#767676", "#ffffff"), 4.54, places=2)
+        self.assertAlmostEqual(ba.contrast_ratio("#777777", "#ffffff"), 4.48, places=2)
+        self.assertAlmostEqual(ba.contrast_ratio("#00ADD8", "#ffffff"), 2.64, places=2)
+
+    def test_every_badge_text_is_readable_against_its_fill(self):
+        for label, slug, _fill in ba.BADGES:
+            root = ET.fromstring((ASSETS / "badges" / f"{slug}.svg").read_text(encoding="utf-8"))
+            fill = find_all(root, "rect")[0].get("fill")
+            color = find_all(root, "text")[0].get("fill")
+            other = ba.TEXT_DARK if color == ba.TEXT_LIGHT else ba.TEXT_LIGHT
+            ratio = ba.contrast_ratio(fill, color)
+            with self.subTest(badge=label, fill=fill, text=color, ratio=round(ratio, 2)):
+                self.assertIn(color, (ba.TEXT_LIGHT, ba.TEXT_DARK))
+                self.assertGreaterEqual(ratio, MIN_CONTRAST)
+                # It is the better of the two, not just a pass.
+                self.assertGreaterEqual(ratio, ba.contrast_ratio(fill, other))
 
     def test_every_badge_has_a_ring_that_shows_on_a_dark_page(self):
         for label, slug, _fill in ba.BADGES:
