@@ -12,7 +12,7 @@ I care about simple designs, clear trade-offs, and things you can measure.
 
 ## What I do
 
-- Designed and built all of my company's AWS infrastructure on my own, as code: Terraform for most systems, plus AWS CDK and Serverless Framework
+- Designed and built my company's AWS infrastructure as code: Terraform for most systems, plus AWS CDK and Serverless Framework
 - Run containers on ECS Fargate behind ALB, with CI/CD on CodePipeline and CodeBuild
 - Set up multi-account AWS with Organizations and IAM Identity Center
 - Build backends with FastAPI, Go and Rails, and frontends with Next.js and React
