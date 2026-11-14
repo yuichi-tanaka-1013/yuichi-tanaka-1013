@@ -1,0 +1,74 @@
+name: Update profile cards
+
+# Runs the tests, then draws stats-*.svg and grass-*.svg once a day and commits
+# them to the `output` branch. The daily cards never go to main. The header and
+# badge SVGs under assets/ on main are static: scripts/build_assets.py writes
+# them. Run it again when a color, a label or a size changes.
+
+on:
+  schedule:
+    - cron: "17 3 * * *" # 03:17 UTC every day, away from the top of the hour
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-profile-cards
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Run the tests
+        run: python3 -m unittest discover -s tests -v
+
+      - name: Draw the cards
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python3 scripts/profile_cards.py --out-dir "$RUNNER_TEMP/cards"
+
+      - name: Commit the cards to the output branch
+        env:
+          CARDS_DIR: ${{ runner.temp }}/cards
+          WORKTREE: ${{ runner.temp }}/output
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          status=0
+          git ls-remote --exit-code --heads origin output > /dev/null || status=$?
+          case "$status" in
+            0)
+              git fetch --no-tags --depth=1 origin output
+              git worktree add -B output "$WORKTREE" FETCH_HEAD
+              ;;
+            2)
+              # First run: start `output` as an orphan branch with no history from main.
+              git worktree add --detach "$WORKTREE"
+              git -C "$WORKTREE" checkout --orphan output
+              git -C "$WORKTREE" rm -rf --quiet .
+              ;;
+            *)
+              echo "Could not read the remote branches (git ls-remote exit code $status)." >&2
+              exit 1
+              ;;
+          esac
+
+          for card in stats-light stats-dark grass-light grass-dark; do
+            cp "$CARDS_DIR/$card.svg" "$WORKTREE/$card.svg"
+            git -C "$WORKTREE" add -- "$card.svg"
+          done
+
+          if git -C "$WORKTREE" diff --cached --quiet; then
+            echo "The cards did not change. Nothing to commit."
+            exit 0
+          fi
+          git -C "$WORKTREE" commit --message "chore: update profile cards"
+          # Push from the main checkout, which holds the credentials. No force push.
+          git push origin output
