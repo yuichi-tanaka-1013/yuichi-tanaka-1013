@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="848" height="252" viewBox="0 0 848 252" role="img" aria-labelledby="title">
+<title id="title">4,748 contributions in the last year, with totals by month and by weekday</title>
+<style>
+text{font-family:-apple-system,"Segoe UI",Helvetica,Arial,sans-serif}
+.bg{fill:#0d1117;stroke:#30363d}
+.t{fill:#e6edf3}
+.m{fill:#9198a1}
+.axis{stroke:#30363d}
+.l0{fill:#161b22}
+.l1{fill:#0e4429}
+.l2{fill:#006d32}
+.l3{fill:#26a641}
+.l4{fill:#39d353}
+</style>
+<rect class="bg" x="0.5" y="0.5" width="847" height="251" rx="12"/>
+<text class="m" x="28" y="38" font-size="14" font-weight="600" text-anchor="start">Contributions in the last year</text>
+<text class="t" x="28" y="92" font-size="48" font-weight="700" text-anchor="start">4,748</text>
+<text class="m" x="28" y="116" font-size="13" font-weight="400" text-anchor="start">Nov 2025 to Nov 2026</text>
+<text class="m" x="28" y="150" font-size="12" font-weight="600" text-anchor="start">By weekday</text>
+<text class="m" x="47" y="170" font-size="11" font-weight="400" text-anchor="middle">Sun</text>
+<rect class="l4" x="28" y="177" width="38" height="28" rx="4"/>
+<text class="t" x="47" y="222" font-size="11" font-weight="400" text-anchor="middle">751</text>
+<text class="m" x="91" y="170" font-size="11" font-weight="400" text-anchor="middle">Mon</text>
+<rect class="l3" x="72" y="177" width="38" height="28" rx="4"/>
+<text class="t" x="91" y="222" font-size="11" font-weight="400" text-anchor="middle">739</text>
+<text class="m" x="135" y="170" font-size="11" font-weight="400" text-anchor="middle">Tue</text>
+<rect class="l3" x="116" y="177" width="38" height="28" rx="4"/>
+<text class="t" x="135" y="222" font-size="11" font-weight="400" text-anchor="middle">679</text>
+<text class="m" x="179" y="170" font-size="11" font-weight="400" text-anchor="middle">Wed</text>
+<rect class="l4" x="160" y="177" width="38" height="28" rx="4"/>
+<text class="t" x="179" y="222" font-size="11" font-weight="400" text-anchor="middle">846</text>
+<text class="m" x="223" y="170" font-size="11" font-weight="400" text-anchor="middle">Thu</text>
+<rect class="l3" x="204" y="177" width="38" height="28" rx="4"/>
+<text class="t" x="223" y="222" font-size="11" font-weight="400" text-anchor="middle">693</text>
+<text class="m" x="267" y="170" font-size="11" font-weight="400" text-anchor="middle">Fri</text>
+<rect class="l2" x="248" y="177" width="38" height="28" rx="4"/>
+<text class="t" x="267" y="222" font-size="11" font-weight="400" text-anchor="middle">583</text>
+<text class="m" x="311" y="170" font-size="11" font-weight="400" text-anchor="middle">Sat</text>
+<rect class="l1" x="292" y="177" width="38" height="28" rx="4"/>
+<text class="t" x="311" y="222" font-size="11" font-weight="400" text-anchor="middle">457</text>
+<text class="m" x="388" y="38" font-size="14" font-weight="600" text-anchor="start">By month</text>
+<line class="axis" x1="388" y1="205.5" x2="820" y2="205.5" stroke-width="1"/>
+<rect class="l3" x="394.3" y="201" width="20.6" height="4" rx="3"/>
+<text class="t" x="404.615" y="195" font-size="10" font-weight="400" text-anchor="middle">33</text>
+<text class="m" x="404.615" y="222" font-size="11" font-weight="400" text-anchor="middle">Nov</text>
+<text class="m" x="404.615" y="237" font-size="10" font-weight="400" text-anchor="middle">2025</text>
+<rect class="l3" x="427.5" y="203" width="20.6" height="2" rx="3"/>
+<text class="t" x="437.846" y="197" font-size="10" font-weight="400" text-anchor="middle">12</text>
+<text class="m" x="437.846" y="222" font-size="11" font-weight="400" text-anchor="middle">Dec</text>
+<rect class="l3" x="460.8" y="197" width="20.6" height="8" rx="3"/>
+<text class="t" x="471.077" y="191" font-size="10" font-weight="400" text-anchor="middle">66</text>
+<text class="m" x="471.077" y="222" font-size="11" font-weight="400" text-anchor="middle">Jan</text>
+<text class="m" x="471.077" y="237" font-size="10" font-weight="400" text-anchor="middle">2026</text>
+<rect class="l3" x="494.0" y="144" width="20.6" height="61" rx="3"/>
+<text class="t" x="504.308" y="138" font-size="10" font-weight="400" text-anchor="middle">488</text>
+<text class="m" x="504.308" y="222" font-size="11" font-weight="400" text-anchor="middle">Feb</text>
+<rect class="l3" x="527.2" y="142" width="20.6" height="63" rx="3"/>
+<text class="t" x="537.538" y="136" font-size="10" font-weight="400" text-anchor="middle">500</text>
+<text class="m" x="537.538" y="222" font-size="11" font-weight="400" text-anchor="middle">Mar</text>
+<rect class="l3" x="560.5" y="176" width="20.6" height="29" rx="3"/>
+<text class="t" x="570.769" y="170" font-size="10" font-weight="400" text-anchor="middle">232</text>
+<text class="m" x="570.769" y="222" font-size="11" font-weight="400" text-anchor="middle">Apr</text>
+<rect class="l3" x="593.7" y="162" width="20.6" height="43" rx="3"/>
+<text class="t" x="604" y="156" font-size="10" font-weight="400" text-anchor="middle">344</text>
+<text class="m" x="604" y="222" font-size="11" font-weight="400" text-anchor="middle">May</text>
+<rect class="l3" x="626.9" y="163" width="20.6" height="42" rx="3"/>
+<text class="t" x="637.231" y="157" font-size="10" font-weight="400" text-anchor="middle">330</text>
+<text class="m" x="637.231" y="222" font-size="11" font-weight="400" text-anchor="middle">Jun</text>
+<rect class="l3" x="660.2" y="137" width="20.6" height="68" rx="3"/>
+<text class="t" x="670.462" y="131" font-size="10" font-weight="400" text-anchor="middle">544</text>
+<text class="m" x="670.462" y="222" font-size="11" font-weight="400" text-anchor="middle">Jul</text>
+<rect class="l3" x="693.4" y="152" width="20.6" height="53" rx="3"/>
+<text class="t" x="703.692" y="146" font-size="10" font-weight="400" text-anchor="middle">420</text>
+<text class="m" x="703.692" y="222" font-size="11" font-weight="400" text-anchor="middle">Aug</text>
+<rect class="l3" x="726.6" y="172" width="20.6" height="33" rx="3"/>
+<text class="t" x="736.923" y="166" font-size="10" font-weight="400" text-anchor="middle">263</text>
+<text class="m" x="736.923" y="222" font-size="11" font-weight="400" text-anchor="middle">Sep</text>
+<rect class="l3" x="759.9" y="127" width="20.6" height="78" rx="3"/>
+<text class="t" x="770.154" y="121" font-size="10" font-weight="400" text-anchor="middle">618</text>
+<text class="m" x="770.154" y="222" font-size="11" font-weight="400" text-anchor="middle">Oct</text>
+<rect class="l3" x="793.1" y="92" width="20.6" height="113" rx="3"/>
+<text class="t" x="803.385" y="86" font-size="10" font-weight="400" text-anchor="middle">898</text>
+<text class="m" x="803.385" y="222" font-size="11" font-weight="400" text-anchor="middle">Nov</text>
+</svg>
