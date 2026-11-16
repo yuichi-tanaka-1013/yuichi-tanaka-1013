@@ -155,11 +155,11 @@ text{font-family:-apple-system,"Segoe UI",Helvetica,Arial,sans-serif}
 <rect class="l1" x="235" y="60" width="12" height="12" rx="2"/>
 <rect class="l2" x="235" y="75" width="12" height="12" rx="2"/>
 <rect class="l1" x="235" y="90" width="12" height="12" rx="2"/>
-<rect class="l2" x="235" y="105" width="12" height="12" rx="2"/>
-<rect class="l4" x="235" y="120" width="12" height="12" rx="2"/>
+<rect class="l1" x="235" y="105" width="12" height="12" rx="2"/>
+<rect class="l3" x="235" y="120" width="12" height="12" rx="2"/>
 </g>
 <g class="w" style="animation-delay:630ms">
-<rect class="l2" x="250" y="30" width="12" height="12" rx="2"/>
+<rect class="l1" x="250" y="30" width="12" height="12" rx="2"/>
 <rect class="l1" x="250" y="45" width="12" height="12" rx="2"/>
 <rect class="l1" x="250" y="60" width="12" height="12" rx="2"/>
 <rect class="l1" x="250" y="75" width="12" height="12" rx="2"/>
@@ -171,23 +171,23 @@ text{font-family:-apple-system,"Segoe UI",Helvetica,Arial,sans-serif}
 <rect class="l1" x="265" y="30" width="12" height="12" rx="2"/>
 <rect class="l1" x="265" y="45" width="12" height="12" rx="2"/>
 <rect class="l1" x="265" y="60" width="12" height="12" rx="2"/>
-<rect class="l2" x="265" y="75" width="12" height="12" rx="2"/>
-<rect class="l3" x="265" y="90" width="12" height="12" rx="2"/>
+<rect class="l1" x="265" y="75" width="12" height="12" rx="2"/>
+<rect class="l2" x="265" y="90" width="12" height="12" rx="2"/>
 <rect class="l1" x="265" y="105" width="12" height="12" rx="2"/>
-<rect class="l2" x="265" y="120" width="12" height="12" rx="2"/>
+<rect class="l1" x="265" y="120" width="12" height="12" rx="2"/>
 </g>
 <g class="w" style="animation-delay:720ms">
-<rect class="l2" x="280" y="30" width="12" height="12" rx="2"/>
-<rect class="l3" x="280" y="45" width="12" height="12" rx="2"/>
-<rect class="l3" x="280" y="60" width="12" height="12" rx="2"/>
-<rect class="l2" x="280" y="75" width="12" height="12" rx="2"/>
+<rect class="l1" x="280" y="30" width="12" height="12" rx="2"/>
+<rect class="l2" x="280" y="45" width="12" height="12" rx="2"/>
+<rect class="l2" x="280" y="60" width="12" height="12" rx="2"/>
+<rect class="l1" x="280" y="75" width="12" height="12" rx="2"/>
 <rect class="l1" x="280" y="90" width="12" height="12" rx="2"/>
 <rect class="l1" x="280" y="105" width="12" height="12" rx="2"/>
 <rect class="l1" x="280" y="120" width="12" height="12" rx="2"/>
 </g>
 <g class="w" style="animation-delay:765ms">
 <rect class="l1" x="295" y="30" width="12" height="12" rx="2"/>
-<rect class="l2" x="295" y="45" width="12" height="12" rx="2"/>
+<rect class="l1" x="295" y="45" width="12" height="12" rx="2"/>
 <rect class="l0" x="295" y="60" width="12" height="12" rx="2"/>
 <rect class="l1" x="295" y="75" width="12" height="12" rx="2"/>
 <rect class="l1" x="295" y="90" width="12" height="12" rx="2"/>
@@ -215,7 +215,7 @@ text{font-family:-apple-system,"Segoe UI",Helvetica,Arial,sans-serif}
 <g class="w" style="animation-delay:900ms">
 <rect class="l0" x="340" y="30" width="12" height="12" rx="2"/>
 <rect class="l1" x="340" y="45" width="12" height="12" rx="2"/>
-<rect class="l2" x="340" y="60" width="12" height="12" rx="2"/>
+<rect class="l1" x="340" y="60" width="12" height="12" rx="2"/>
 <rect class="l1" x="340" y="75" width="12" height="12" rx="2"/>
 <rect class="l1" x="340" y="90" width="12" height="12" rx="2"/>
 <rect class="l1" x="340" y="105" width="12" height="12" rx="2"/>
@@ -226,7 +226,7 @@ text{font-family:-apple-system,"Segoe UI",Helvetica,Arial,sans-serif}
 <rect class="l1" x="355" y="45" width="12" height="12" rx="2"/>
 <rect class="l1" x="355" y="60" width="12" height="12" rx="2"/>
 <rect class="l1" x="355" y="75" width="12" height="12" rx="2"/>
-<rect class="l2" x="355" y="90" width="12" height="12" rx="2"/>
+<rect class="l1" x="355" y="90" width="12" height="12" rx="2"/>
 <rect class="l1" x="355" y="105" width="12" height="12" rx="2"/>
 <rect class="l0" x="355" y="120" width="12" height="12" rx="2"/>
 </g>
@@ -253,24 +253,24 @@ text{font-family:-apple-system,"Segoe UI",Helvetica,Arial,sans-serif}
 <rect class="l0" x="400" y="45" width="12" height="12" rx="2"/>
 <rect class="l0" x="400" y="60" width="12" height="12" rx="2"/>
 <rect class="l0" x="400" y="75" width="12" height="12" rx="2"/>
-<rect class="l2" x="400" y="90" width="12" height="12" rx="2"/>
+<rect class="l1" x="400" y="90" width="12" height="12" rx="2"/>
 <rect class="l1" x="400" y="105" width="12" height="12" rx="2"/>
 <rect class="l0" x="400" y="120" width="12" height="12" rx="2"/>
 </g>
 <g class="w" style="animation-delay:1125ms">
 <rect class="l0" x="415" y="30" width="12" height="12" rx="2"/>
 <rect class="l1" x="415" y="45" width="12" height="12" rx="2"/>
-<rect class="l2" x="415" y="60" width="12" height="12" rx="2"/>
+<rect class="l1" x="415" y="60" width="12" height="12" rx="2"/>
 <rect class="l0" x="415" y="75" width="12" height="12" rx="2"/>
 <rect class="l2" x="415" y="90" width="12" height="12" rx="2"/>
-<rect class="l2" x="415" y="105" width="12" height="12" rx="2"/>
+<rect class="l1" x="415" y="105" width="12" height="12" rx="2"/>
 <rect class="l0" x="415" y="120" width="12" height="12" rx="2"/>
 </g>
 <g class="w" style="animation-delay:1170ms">
 <rect class="l0" x="430" y="30" width="12" height="12" rx="2"/>
 <rect class="l1" x="430" y="45" width="12" height="12" rx="2"/>
 <rect class="l1" x="430" y="60" width="12" height="12" rx="2"/>
-<rect class="l2" x="430" y="75" width="12" height="12" rx="2"/>
+<rect class="l1" x="430" y="75" width="12" height="12" rx="2"/>
 <rect class="l1" x="430" y="90" width="12" height="12" rx="2"/>
 <rect class="l1" x="430" y="105" width="12" height="12" rx="2"/>
 <rect class="l1" x="430" y="120" width="12" height="12" rx="2"/>
@@ -317,14 +317,14 @@ text{font-family:-apple-system,"Segoe UI",Helvetica,Arial,sans-serif}
 <rect class="l1" x="505" y="60" width="12" height="12" rx="2"/>
 <rect class="l2" x="505" y="75" width="12" height="12" rx="2"/>
 <rect class="l1" x="505" y="90" width="12" height="12" rx="2"/>
-<rect class="l2" x="505" y="105" width="12" height="12" rx="2"/>
+<rect class="l1" x="505" y="105" width="12" height="12" rx="2"/>
 <rect class="l1" x="505" y="120" width="12" height="12" rx="2"/>
 </g>
 <g class="w" style="animation-delay:1440ms">
 <rect class="l0" x="520" y="30" width="12" height="12" rx="2"/>
 <rect class="l0" x="520" y="45" width="12" height="12" rx="2"/>
 <rect class="l1" x="520" y="60" width="12" height="12" rx="2"/>
-<rect class="l2" x="520" y="75" width="12" height="12" rx="2"/>
+<rect class="l1" x="520" y="75" width="12" height="12" rx="2"/>
 <rect class="l1" x="520" y="90" width="12" height="12" rx="2"/>
 <rect class="l1" x="520" y="105" width="12" height="12" rx="2"/>
 <rect class="l1" x="520" y="120" width="12" height="12" rx="2"/>
@@ -335,7 +335,7 @@ text{font-family:-apple-system,"Segoe UI",Helvetica,Arial,sans-serif}
 <rect class="l1" x="535" y="60" width="12" height="12" rx="2"/>
 <rect class="l1" x="535" y="75" width="12" height="12" rx="2"/>
 <rect class="l1" x="535" y="90" width="12" height="12" rx="2"/>
-<rect class="l2" x="535" y="105" width="12" height="12" rx="2"/>
+<rect class="l1" x="535" y="105" width="12" height="12" rx="2"/>
 <rect class="l1" x="535" y="120" width="12" height="12" rx="2"/>
 </g>
 <g class="w" style="animation-delay:1530ms">
@@ -354,12 +354,12 @@ text{font-family:-apple-system,"Segoe UI",Helvetica,Arial,sans-serif}
 <rect class="l1" x="565" y="75" width="12" height="12" rx="2"/>
 <rect class="l1" x="565" y="90" width="12" height="12" rx="2"/>
 <rect class="l1" x="565" y="105" width="12" height="12" rx="2"/>
-<rect class="l2" x="565" y="120" width="12" height="12" rx="2"/>
+<rect class="l1" x="565" y="120" width="12" height="12" rx="2"/>
 </g>
 <g class="w" style="animation-delay:1620ms">
-<rect class="l2" x="580" y="30" width="12" height="12" rx="2"/>
-<rect class="l2" x="580" y="45" width="12" height="12" rx="2"/>
-<rect class="l2" x="580" y="60" width="12" height="12" rx="2"/>
+<rect class="l1" x="580" y="30" width="12" height="12" rx="2"/>
+<rect class="l1" x="580" y="45" width="12" height="12" rx="2"/>
+<rect class="l1" x="580" y="60" width="12" height="12" rx="2"/>
 <rect class="l2" x="580" y="75" width="12" height="12" rx="2"/>
 <rect class="l1" x="580" y="90" width="12" height="12" rx="2"/>
 <rect class="l1" x="580" y="105" width="12" height="12" rx="2"/>
@@ -368,7 +368,7 @@ text{font-family:-apple-system,"Segoe UI",Helvetica,Arial,sans-serif}
 <g class="w" style="animation-delay:1665ms">
 <rect class="l1" x="595" y="30" width="12" height="12" rx="2"/>
 <rect class="l1" x="595" y="45" width="12" height="12" rx="2"/>
-<rect class="l2" x="595" y="60" width="12" height="12" rx="2"/>
+<rect class="l1" x="595" y="60" width="12" height="12" rx="2"/>
 <rect class="l1" x="595" y="75" width="12" height="12" rx="2"/>
 <rect class="l1" x="595" y="90" width="12" height="12" rx="2"/>
 <rect class="l1" x="595" y="105" width="12" height="12" rx="2"/>
@@ -402,7 +402,7 @@ text{font-family:-apple-system,"Segoe UI",Helvetica,Arial,sans-serif}
 <rect class="l1" x="640" y="120" width="12" height="12" rx="2"/>
 </g>
 <g class="w" style="animation-delay:1845ms">
-<rect class="l3" x="655" y="30" width="12" height="12" rx="2"/>
+<rect class="l2" x="655" y="30" width="12" height="12" rx="2"/>
 <rect class="l1" x="655" y="45" width="12" height="12" rx="2"/>
 <rect class="l1" x="655" y="60" width="12" height="12" rx="2"/>
 <rect class="l1" x="655" y="75" width="12" height="12" rx="2"/>
@@ -413,7 +413,7 @@ text{font-family:-apple-system,"Segoe UI",Helvetica,Arial,sans-serif}
 <g class="w" style="animation-delay:1890ms">
 <rect class="l0" x="670" y="30" width="12" height="12" rx="2"/>
 <rect class="l1" x="670" y="45" width="12" height="12" rx="2"/>
-<rect class="l2" x="670" y="60" width="12" height="12" rx="2"/>
+<rect class="l1" x="670" y="60" width="12" height="12" rx="2"/>
 <rect class="l1" x="670" y="75" width="12" height="12" rx="2"/>
 <rect class="l1" x="670" y="90" width="12" height="12" rx="2"/>
 <rect class="l1" x="670" y="105" width="12" height="12" rx="2"/>
@@ -441,7 +441,7 @@ text{font-family:-apple-system,"Segoe UI",Helvetica,Arial,sans-serif}
 <rect class="l1" x="715" y="30" width="12" height="12" rx="2"/>
 <rect class="l1" x="715" y="45" width="12" height="12" rx="2"/>
 <rect class="l1" x="715" y="60" width="12" height="12" rx="2"/>
-<rect class="l3" x="715" y="75" width="12" height="12" rx="2"/>
+<rect class="l2" x="715" y="75" width="12" height="12" rx="2"/>
 <rect class="l1" x="715" y="90" width="12" height="12" rx="2"/>
 <rect class="l0" x="715" y="105" width="12" height="12" rx="2"/>
 <rect class="l0" x="715" y="120" width="12" height="12" rx="2"/>
@@ -450,7 +450,7 @@ text{font-family:-apple-system,"Segoe UI",Helvetica,Arial,sans-serif}
 <rect class="l0" x="730" y="30" width="12" height="12" rx="2"/>
 <rect class="l1" x="730" y="45" width="12" height="12" rx="2"/>
 <rect class="l1" x="730" y="60" width="12" height="12" rx="2"/>
-<rect class="l4" x="730" y="75" width="12" height="12" rx="2"/>
+<rect class="l3" x="730" y="75" width="12" height="12" rx="2"/>
 <rect class="l1" x="730" y="90" width="12" height="12" rx="2"/>
 <rect class="l1" x="730" y="105" width="12" height="12" rx="2"/>
 <rect class="l1" x="730" y="120" width="12" height="12" rx="2"/>
@@ -458,9 +458,9 @@ text{font-family:-apple-system,"Segoe UI",Helvetica,Arial,sans-serif}
 <g class="w" style="animation-delay:2115ms">
 <rect class="l1" x="745" y="30" width="12" height="12" rx="2"/>
 <rect class="l1" x="745" y="45" width="12" height="12" rx="2"/>
-<rect class="l2" x="745" y="60" width="12" height="12" rx="2"/>
-<rect class="l3" x="745" y="75" width="12" height="12" rx="2"/>
-<rect class="l3" x="745" y="90" width="12" height="12" rx="2"/>
+<rect class="l1" x="745" y="60" width="12" height="12" rx="2"/>
+<rect class="l2" x="745" y="75" width="12" height="12" rx="2"/>
+<rect class="l2" x="745" y="90" width="12" height="12" rx="2"/>
 <rect class="l1" x="745" y="105" width="12" height="12" rx="2"/>
 <rect class="l1" x="745" y="120" width="12" height="12" rx="2"/>
 </g>
@@ -468,8 +468,8 @@ text{font-family:-apple-system,"Segoe UI",Helvetica,Arial,sans-serif}
 <rect class="l1" x="760" y="30" width="12" height="12" rx="2"/>
 <rect class="l1" x="760" y="45" width="12" height="12" rx="2"/>
 <rect class="l1" x="760" y="60" width="12" height="12" rx="2"/>
-<rect class="l2" x="760" y="75" width="12" height="12" rx="2"/>
-<rect class="l2" x="760" y="90" width="12" height="12" rx="2"/>
+<rect class="l1" x="760" y="75" width="12" height="12" rx="2"/>
+<rect class="l1" x="760" y="90" width="12" height="12" rx="2"/>
 <rect class="l1" x="760" y="105" width="12" height="12" rx="2"/>
 <rect class="l1" x="760" y="120" width="12" height="12" rx="2"/>
 </g>
@@ -478,30 +478,31 @@ text{font-family:-apple-system,"Segoe UI",Helvetica,Arial,sans-serif}
 <rect class="l0" x="775" y="45" width="12" height="12" rx="2"/>
 <rect class="l1" x="775" y="60" width="12" height="12" rx="2"/>
 <rect class="l1" x="775" y="75" width="12" height="12" rx="2"/>
-<rect class="l2" x="775" y="90" width="12" height="12" rx="2"/>
+<rect class="l1" x="775" y="90" width="12" height="12" rx="2"/>
 <rect class="l1" x="775" y="105" width="12" height="12" rx="2"/>
 <rect class="l0" x="775" y="120" width="12" height="12" rx="2"/>
 </g>
 <g class="w" style="animation-delay:2250ms">
 <rect class="l1" x="790" y="30" width="12" height="12" rx="2"/>
-<rect class="l3" x="790" y="45" width="12" height="12" rx="2"/>
-<rect class="l2" x="790" y="60" width="12" height="12" rx="2"/>
-<rect class="l2" x="790" y="75" width="12" height="12" rx="2"/>
-<rect class="l2" x="790" y="90" width="12" height="12" rx="2"/>
+<rect class="l2" x="790" y="45" width="12" height="12" rx="2"/>
+<rect class="l1" x="790" y="60" width="12" height="12" rx="2"/>
+<rect class="l1" x="790" y="75" width="12" height="12" rx="2"/>
+<rect class="l1" x="790" y="90" width="12" height="12" rx="2"/>
 <rect class="l1" x="790" y="105" width="12" height="12" rx="2"/>
 <rect class="l1" x="790" y="120" width="12" height="12" rx="2"/>
 </g>
 <g class="w" style="animation-delay:2295ms">
 <rect class="l4" x="805" y="30" width="12" height="12" rx="2"/>
 <rect class="l4" x="805" y="45" width="12" height="12" rx="2"/>
-<rect class="l3" x="805" y="60" width="12" height="12" rx="2"/>
-<rect class="l2" x="805" y="75" width="12" height="12" rx="2"/>
-<rect class="l2" x="805" y="90" width="12" height="12" rx="2"/>
-<rect class="l2" x="805" y="105" width="12" height="12" rx="2"/>
+<rect class="l2" x="805" y="60" width="12" height="12" rx="2"/>
+<rect class="l1" x="805" y="75" width="12" height="12" rx="2"/>
+<rect class="l1" x="805" y="90" width="12" height="12" rx="2"/>
+<rect class="l1" x="805" y="105" width="12" height="12" rx="2"/>
 <rect class="l4" x="805" y="120" width="12" height="12" rx="2"/>
 </g>
 <g class="w" style="animation-delay:2340ms">
-<rect class="l1" x="820" y="30" width="12" height="12" rx="2"/>
+<rect class="l4" x="820" y="30" width="12" height="12" rx="2"/>
+<rect class="l1" x="820" y="45" width="12" height="12" rx="2"/>
 </g>
 <text class="m" x="832" y="163" font-size="10" font-weight="400" text-anchor="end">More</text>
 <rect class="l0" x="728" y="153" width="12" height="12" rx="2"/>
