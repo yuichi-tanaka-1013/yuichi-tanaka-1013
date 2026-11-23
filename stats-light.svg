@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="848" height="252" viewBox="0 0 848 252" role="img" aria-labelledby="title">
-<title id="title">5,239 contributions in the last year, with totals by month and by weekday</title>
+<title id="title">5,220 contributions in the last year, with totals by month and by weekday</title>
 <style>
 text{font-family:-apple-system,"Segoe UI",Helvetica,Arial,sans-serif}
 .bg{fill:#ffffff;stroke:#d1d9e0}
@@ -14,7 +14,7 @@ text{font-family:-apple-system,"Segoe UI",Helvetica,Arial,sans-serif}
 </style>
 <rect class="bg" x="0.5" y="0.5" width="847" height="251" rx="12"/>
 <text class="m" x="28" y="38" font-size="14" font-weight="600" text-anchor="start">Contributions in the last year</text>
-<text class="t" x="28" y="92" font-size="48" font-weight="700" text-anchor="start">5,239</text>
+<text class="t" x="28" y="92" font-size="48" font-weight="700" text-anchor="start">5,220</text>
 <text class="m" x="28" y="116" font-size="13" font-weight="400" text-anchor="start">Nov 2025 to Nov 2026</text>
 <text class="m" x="28" y="150" font-size="12" font-weight="600" text-anchor="start">By weekday</text>
 <text class="m" x="47" y="170" font-size="11" font-weight="400" text-anchor="middle">Sun</text>
